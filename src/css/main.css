@@ -16,15 +16,24 @@ body {
 }
 
 header {
-  height: 200vh;
+  position: relative;
+  height: 75vh;
+  background-image: url("../assets/bg-header.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 header nav {
   min-height: 6.25em;
   background-color: rgba(51, 51, 51, 0.6);
-  background-filter: blur(5px);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
+
+header nav .navbar-brand img {
+  height: 4.2rem !important;
 }
 
 header nav .collapse ul {
@@ -88,11 +97,31 @@ header .menu-contato ul li a i:hover {
   color: #d66f00;
 }
 
-.menu-center {
+header .menu-center {
   top: 50% !important;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 1rem 0 0 1rem !important;
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
+}
+
+header .banner-lancamento {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  background-color: rgba(239, 124, 0, 0.8);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+  border-radius: 0 1rem 0 0;
+}
+
+header .banner-lancamento h3 {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-size: 1.375rem;
+  font-weight: 300;
+  color: #fff;
 }

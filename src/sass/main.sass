@@ -2,13 +2,21 @@
 @import body
 
 header
-	height: 200vh
+	position: relative
+	height: 75vh
+	background:
+		image: url("../assets/bg-header.jpg")
+		size: cover
+		position: center
 	nav
 		min-height: 6.25em
 		background:
 			color: $bgMenu
-			filter: blur(5px)
 		box-shadow: 0 4px 4px rgba(0,0,0,.25)
+		backdrop-filter: blur(2.5px)
+		.navbar-brand
+			img
+				height: 4.2rem !important
 		.collapse
 			ul
 				height: 100%
@@ -51,8 +59,25 @@ header
 							size: 2rem
 						&:hover
 							color: darken($lk-color1,5)
-.menu-center
-	top: 50% !important
-	transform: translateY(-50%)
-	border-radius: 1rem 0 0 1rem !important
-	+transition(.7s)
+	.menu-center
+		top: 50% !important
+		transform: translateY(-50%)
+		border-radius: 1rem 0 0 1rem !important
+		+transition(.7s)
+	.banner-lancamento
+		position: absolute
+		bottom: 0
+		left: 0
+		padding: 1rem 2rem
+		background:
+			color: rgba(239, 124, 0, 0.8)
+		backdrop-filter: blur(1.5px)
+		border-radius: 0 1rem 0 0
+		h3
+			padding: 0
+			margin: 0
+			font:
+				style: normal
+				size: 1.375rem
+				weight: $f1-light
+			color: $lk-color3
