@@ -1,2 +1,50 @@
 @import mixins
 @import body
+
+header
+	nav
+		min-height: 6.25em
+		background:
+			color: $bgMenu
+			filter: blur(5px)
+		box-shadow: 0 4px 4px rgba(0,0,0,.25)
+		.collapse
+			ul
+				height: 100%
+				li
+					height: 3rem
+					margin: 0 .5rem !important
+					a
+						text-align: center
+						color: $lk-color3 !important
+						line-height: 2rem
+						&:hover
+							border-bottom: 2px solid $lk-color1
+	.menu-contato
+		position: absolute
+		top: 0
+		right: 0
+		margin: 0
+		padding: 1rem
+		background:
+			color: rgba(255,255,255,.9)
+		box-shadow: 5px 5px 8px rgba(0,0,0,.25)
+		border-radius: 0 0 0 1rem
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				margin: 0
+				padding: 0
+				a
+					margin: 0
+					padding: 0
+					i
+						margin: 0
+						padding: 0
+						color: $lk-color1
+						font:
+							size: 2rem
+						&:hover
+							color: darken($lk-color1,5)
