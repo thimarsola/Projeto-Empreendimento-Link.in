@@ -115,18 +115,22 @@ header .banner-lancamento h3 {
   -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0 0 0 1rem;
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
 @media (max-width: 576px) {
   .menu-contato {
+    padding: .5rem;
     width: 100%;
     position: fixed;
     bottom: 0 !important;
     left: 0 !important;
     top: initial;
     right: initial;
+    border-radius: 0;
     background-color: rgba(247, 247, 247, 0.9);
   }
 }
@@ -217,9 +221,79 @@ header .banner-lancamento h3 {
     left: 0 !important;
     -webkit-transform: none;
             transform: none;
+    border-radius: 0 !important;
   }
 }
 
-main {
-  height: 100vh;
+main #apresentacao {
+  padding: 2rem 0;
+  background-image: url("../assets/bg-apresentacao.png");
+  background-size: cover;
+  background-position: center;
+}
+
+main #apresentacao .container .row div:nth-child(1) {
+  z-index: 2;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  main #apresentacao .container .row div:nth-child(1) img {
+    width: 105%;
+  }
+}
+
+@media (max-width: 576px) {
+  main #apresentacao .container .row div:nth-child(1) img {
+    width: 100%;
+  }
+}
+
+main #apresentacao .container .row div:nth-child(2) {
+  z-index: 1;
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao {
+  padding: 1rem 2rem !important;
+  background-color: #333333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao {
+    padding: 2rem !important;
+  }
+}
+
+main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao h5 {
+  font-style: normal;
+  font-size: 1.875em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao h5 span {
+  color: #EF7C00;
+}
+
+main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao h4 {
+  font-style: normal;
+  font-size: 1.375em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+main #apresentacao .container .row div:nth-child(2) .conteudo-apresentacao p {
+  margin: 1.5rem 0 0 0;
+  text-align: justify;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
 }

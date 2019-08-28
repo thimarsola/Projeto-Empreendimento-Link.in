@@ -70,14 +70,17 @@ header
 		color: rgba(255,255,255,.9)
 	box-shadow: 5px 5px 8px rgba(0,0,0,.25)
 	border-radius: 0 0 0 1rem
+	backdrop-filter: blur(1.5px)
 	+transition(.4s)
 	+breakpoint($celular)
+		padding: .5rem
 		width: 100%
 		position: fixed
 		bottom: 0 !important
 		left: 0 !important
 		top: initial
 		right: initial
+		border-radius: 0
 		background:
 			color: darken(rgba(255,255,255,.9), 3)
 	ul
@@ -129,5 +132,58 @@ header
 		bottom: 0 !important
 		left: 0 !important
 		transform: none
+		border-radius: 0 !important
 main
-	height: 100vh
+	#apresentacao
+		padding: 2rem 0
+		background: 
+			image: url("../assets/bg-apresentacao.png")
+			size: cover
+			position: center
+		.container
+			.row
+				div
+					&:nth-child(1)
+						z-index: 2
+						padding: 0 !important
+						img
+							+breakpoint($tablet)
+								width: 105%
+							+breakpoint($celular)
+								width: 100%
+					&:nth-child(2)
+						z-index: 1
+						padding: 0 !important
+						display: flex
+						align-items: center
+						.conteudo-apresentacao
+							padding: 1rem 2rem !important
+							background:
+								color: $lk-color2
+							color: $lk-color3
+							+breakpoint($tablet)
+								padding: 2rem !important
+							h5
+								font:
+									style: normal
+									size: 1.875em
+									weight: $f1-medium
+								text:
+									transform: uppercase
+								span
+									color: $lk-color1
+							h4
+								font:
+									style: normal
+									size: 1.375em
+									weight: $f1-light
+								text:
+									transform: uppercase
+							p
+								margin: 1.5rem 0 0 0
+								text:
+									align: justify
+								font:
+									style: normal
+									size: 1rem
+									weight: $f1-light						
