@@ -82,8 +82,16 @@ main #projeto .container-fluid { padding: 2.5rem 0; background-color: #333333; }
 
 main #projeto .container-fluid .container .row .coluna:nth-child(1) { margin: auto 0; color: #fff; }
 
-main #projeto .container-fluid .container .row .coluna:nth-child(1) h1 { font-style: normal; font-family: 'Caveat', cursive; font-size: 2.125rem; font-weight: 700; }
+main #projeto .container-fluid .container .row .coluna:nth-child(1) h1 { margin-bottom: 1.25rem; font-style: normal; font-family: 'Caveat', cursive; font-size: 2.125rem; font-weight: 700; }
 
 main #projeto .container-fluid .container .row .coluna:nth-child(1) h1 span { color: #EF7C00; }
 
-main #projeto .container-fluid .container .row .coluna:nth-child(1) p { margin: 0; font-style: normal; font-size: 1rem; font-weight: f1-light; }
+main #projeto .container-fluid .container .row .coluna:nth-child(1) p { margin: 0 0 1.75rem 0; font-style: normal; font-size: 1rem; font-weight: f1-light; }
+
+main #projeto .container-fluid .container .row .coluna:nth-child(1) p:nth-child(4) { margin-bottom: 0 !important; }
+
+main #projeto .container-fluid .container .row .coluna:nth-child(2) { padding: 2.5rem 2rem; background-color: #fff; border-radius: 10px; -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25); }
+
+main #projeto .container-fluid .container .row .coluna:nth-child(2) h6 { margin: 0; text-transform: uppercase; font-style: normal; font-size: 1.25rem; font-weight: 400; color: #EF7C00; }
+
+main #projeto .container-fluid .container .row .coluna:nth-child(2) h6 p { font-style: normal; font-size: 1rem; font-weight: 400; }
