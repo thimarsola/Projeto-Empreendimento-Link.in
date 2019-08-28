@@ -19,6 +19,11 @@ header
 		.navbar-brand
 			img
 				height: 4.2rem !important
+		.navbar-toggler
+			+breakpoint($tablet)
+				transform: translateX(-80%)
+			+breakpoint($celular)
+				transform: none
 		.collapse
 			ul
 				height: 100%
@@ -40,6 +45,8 @@ header
 			color: rgba(239, 124, 0, 0.8)
 		backdrop-filter: blur(1.5px)
 		border-radius: 0 1rem 0 0
+		+breakpoint($celular)
+			padding: .75rem 1.5rem
 		h3
 			padding: 0
 			margin: 0
@@ -48,6 +55,9 @@ header
 				size: 1.375rem
 				weight: $f1-light
 			color: $lk-color3
+			+breakpoint($celular)
+				font:
+					size: 1rem
 .menu-contato
 	display: block
 	position: absolute
@@ -105,7 +115,13 @@ header
 	top: 50% !important
 	transform: translateY(-50%)
 	border-radius: 1rem 0 0 1rem !important
+	opacity: .5
 	+transition(.7s)
+	+breakpoint($celular)
+		opacity: 1
+	&:hover
+		opacity: 1
+		+transition(.3s)
 	+breakpoint($celular)
 		position: fixed
 		right: initial !important
