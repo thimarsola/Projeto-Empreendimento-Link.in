@@ -128,7 +128,7 @@ main #projeto .container-fluid .container .row .coluna:nth-child(2) form textare
 
 main #projeto .container-fluid .container .row .coluna:nth-child(2) form button { margin: 2.5rem auto 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-main #plantas { padding: 5rem 0; }
+main #plantas { padding: 5rem 0; margin-bottom: 5rem; }
 
 main #plantas h3 { margin-bottom: 1rem; font-style: normal; font-family: 'Caveat', cursive; font-size: 3.125rem; font-weight: 400; text-align: center; }
 
@@ -145,3 +145,21 @@ main #plantas .row div img { width: auto; height: 100%; margin-bottom: 1rem; }
 main #plantas .row div p { margin-bottom: .625rem !important; font-style: normal; font-family: 'Caveat', cursive !important; font-size: 1.875rem; font-weight: 400; text-align: center; }
 
 main #plantas .row div hr { width: 3.125rem; border: 0.5px solid #EF7C00; }
+
+main #diferenciais { padding: 3.125rem 0; background-color: #333333; color: #fff; }
+
+main #diferenciais h3 { margin-bottom: 1rem; font-style: normal; font-family: 'Caveat', cursive; font-size: 3.125rem; font-weight: 400; text-align: center; }
+
+main #diferenciais hr { margin-bottom: 2rem; width: 6.25rem; border: 1px solid #EF7C00; }
+
+main #diferenciais .row div:nth-child(1) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 18.75rem; }
+
+@media (max-width: 576px) { main #diferenciais .row div:nth-child(1) { display: block; height: auto; margin-bottom: 3rem; } }
+
+main #diferenciais .row div:nth-child(1) p { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 2.5rem !important; margin: 0; font-style: normal; font-size: 1rem; font-weight: 300; }
+
+main #diferenciais .row div:nth-child(1) p i { margin-right: 0.625rem; font-size: 2rem !important; color: #EF7C00; line-height: 0 !important; }
+
+main #diferenciais .row div:nth-child(2) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+@media (max-width: 768px) { main #diferenciais .row div:nth-child(2) { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
