@@ -143,7 +143,8 @@
 											size="35" maxlength="100" required="">
 									</div>
 									<div class="form-group">
-										<input type="email" class="form-control" id="campo-email" placeholder="E-mail" required="">
+										<input type="email" class="form-control" id="campo-email" placeholder="E-mail"
+											required="">
 									</div>
 									<div class="form-group">
 										<input type="tel" class="form-control" id="campo-cel" name="celular" placeholder="Celular"
@@ -169,7 +170,8 @@
 				<div class="row">
 					<!-- Dormitório -->
 					<div class="col-sm-4">
-						<img src="src/assets/img-dormitorio.jpg" alt="Planta Dormitório Empreendimento Link.in" class="img-fluid">
+						<img src="src/assets/img-dormitorio.jpg" alt="Planta Dormitório Empreendimento Link.in"
+							class="img-fluid">
 						<p>Dormitório</p>
 						<hr>
 					</div>
@@ -215,7 +217,8 @@
 					</div>
 					<!-- Imagem -->
 					<div class="col-lg-6">
-						<img src="src/assets/img-diferenciais.png" alt="Diferenciais empreendimento Link.in" class="img-fluid">
+						<img src="src/assets/img-diferenciais.png" alt="Diferenciais empreendimento Link.in"
+							class="img-fluid">
 					</div>
 				</div>
 			</div>
@@ -229,28 +232,36 @@
 				<div id="carouselGaleria" class="carousel slide" data-ride="carousel" data-interval="2700">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img src="src/assets/img-galeria1.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria1.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria2.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria2.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria3.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria3.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria4.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria4.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria5.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria5.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria6.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria6.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria7.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria7.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 						<div class="carousel-item">
-							<img src="src/assets/img-galeria8.jpg" class="d-block w-100" alt="Galeria de fotos empreendimento Link.in">
+							<img src="src/assets/img-galeria8.jpg" class="d-block w-100"
+								alt="Galeria de fotos empreendimento Link.in">
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselGaleria" role="button" data-slide="prev">
@@ -279,13 +290,57 @@
 			</div>
 		</section>
 		<!-- Contato -->
-		<section id="contato">
-			<div class="container-fluid"></div>
+		<section id="fale-conosco">
+			<div class="container-fluid">
+				<p>Entre em contato para maiores informações</p>
+				<button type="button" class="btn btn-lk-color1" data-toggle="modal" data-target="#modalContato">
+					Contato
+				</button>
+				<!-- Modal -->
+				<div class="modal fade" id="modalContato" tabindex="-1" role="dialog" aria-labelledby="modalContatoTitle"
+					aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-body">
+								<h5>Contato</h5>
+								<hr>
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control" id="campo-nome" placeholder="Nome" name="nome"
+											size="35" maxlength="100" required="">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" id="campo-email" placeholder="E-mail"
+											required="">
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control" id="campo-cel" name="celular" placeholder="Celular"
+											size="35" maxlength="70" required="">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" id="campo-mensagem" rows="3" name="mensagem"
+											placeholder="Mensagem*" required=""></textarea>
+									</div>
+									<button type="submit" class="btn btn-lk-color1 pl-5 pr-5">Enviar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<!-- Footer -->
 	<footer>
-
+		<div class="container-fluid">
+			<div class="container">
+				<img src="src/assets/logo-footer.svg" alt="Logo empreendimento Link.in" class="img-fluid">
+				<p><small>Todos os direitos reservados</small></p>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<p><small>Desenvolvido por <a href="http://www.goognet.com.br">Goognet Solução Digital</a></small></p>
+		</div>
 	</footer>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="src/js/jquery.min.js "></script>

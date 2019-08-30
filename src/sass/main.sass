@@ -399,3 +399,94 @@ main
 					height: 16rem
 				+breakpoint($celular)
 					height: 8rem
+	#fale-conosco
+		padding: 5.625rem 0
+		background:
+			image: url("../assets/bg-contato.jpg")
+			size: cover
+			position: center
+		p
+			text:
+				align: center
+				transform: uppercase
+			color: $lk-color3
+		button
+			margin: 2.5rem auto 0 auto
+			padding: .6rem 3.75rem
+			display: flex
+			justify-content: center
+			text-transform: uppercase
+		.modal
+			.modal-content
+				padding: 2.125rem 1rem
+				border: none
+				box-shadow: 0 4px 4px rgba(0,0,0,.25) 
+				background:
+					color: rgba(255,255,255,.7)
+				backdrop-filter: blur(3px)
+				h5
+					margin-bottom: 1rem
+					font:
+						style: normal
+						family: 'Caveat', cursive
+						size: 3.125rem
+						weight: $f2-regular
+					text:
+						align: center
+				hr
+					margin-bottom: 2.8125rem
+					width: 6.25rem
+					border: 1px solid $lk-color1
+					+breakpoint($celular)
+						margin-bottom: 3rem
+				form
+					+placeholderColor(#262626,.85rem,$f1-light)
+					input, textarea
+						background: none
+						border-color: #949494
+					button
+						margin: 2.5rem auto 0 auto
+						display: flex
+						justify-content: center
+footer
+	.container-fluid
+		&:nth-child(1)
+			background:
+				image: url("../assets/bg-footer.jpg")
+				size: cover
+				position: center
+			.container
+				padding: 2rem 0
+				margin: auto
+				display: flex
+				justify-content: center
+				flex-direction: column
+				img
+					margin-bottom: 1.125rem
+				p
+					margin: 0
+					color: $lk-color3
+					text:
+						transform: uppercase
+						align: center
+					small
+						font:
+							weight: $f1-light !important
+		&:nth-child(2)
+			background:
+				color: #111111
+			padding: .75rem 0
+			color: $lk-color3
+			text:
+				align: center
+				transform: uppercase
+			p
+				margin: 0
+				small
+					font:
+						style: normal
+						weight: $f1-light
+					a
+						font:
+							weight: $f1-medium
+						color: $lk-color3
