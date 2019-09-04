@@ -16,6 +16,8 @@ if (isset($_POST['submit'])){
 	$responseKey = $_POST['g-recaptcha-response'];
 	$userIP = $_SERVER['REMOTE_ADDR'];
 
+	$pixel = dirname("../js/pixel.js'");
+
 	$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
 	$ch = curl_init();
 	$timeout = 5; // set to zero for no timeout
@@ -51,7 +53,7 @@ if (isset($_POST['submit'])){
 	if (isset($envio)) {
 		echo "<script>alert('Mensagem enviada com sucesso! Em breve estaremos entrando em contato!');</script>";
 
-		echo "<script src="../js/pixel.js"></script>";
+		echo "<script src=".$pixel."></script>";
 
 		echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=../../'>";
 	}
