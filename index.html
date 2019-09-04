@@ -39,6 +39,37 @@
 	<meta http-equiv="expires" content="0" />
 	<!-- Title -->
 	<title>Empreendimento Link.in - Vila Mariana</title>
+	<!-- Google reCaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Facebook Pixel Code -->
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '752981585144041');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=752981585144041&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+	<script>
+		fbq('track', 'ViewContent');
+	</script>
 </head>
 
 <body>
@@ -77,12 +108,12 @@
 			</div>
 		</nav>
 		<!-- Banner Lançamento -->
-		<div class="banner-lancamento wow fadeIn">
+		<div class="banner-lancamento wow pulse">
 			<h3>Breve lançamento na Vila Mariana</h3>
 		</div>
 	</header>
 	<!-- Menu de contato -->
-	<div class="menu-contato">
+	<div class="menu-contato wow fadeInDown">
 		<ul>
 			<li><a href="https://api.whatsapp.com/send?l=pt_BR&phone=5511970850723"><i
 						class="icon ion-logo-whatsapp"></i></a></li>
@@ -101,7 +132,7 @@
 						<img src="src/assets/img-apresentacao.png" alt="Imagem de apresentação empreendimento Link.in">
 					</div>
 					<!-- Texto -->
-					<div class="col-sm-6">
+					<div class="col-sm-6 wow fadeInRight">
 						<div class="conteudo-apresentacao">
 							<h5>Não perca essa chance<span>!</span></h5>
 							<h4>A melhor oportunidade na <strong>vila mariana</strong></h4>
@@ -121,7 +152,7 @@
 				<div class="container">
 					<div class="row">
 						<!-- Texto -->
-						<div class="col-sm-6 coluna">
+						<div class="col-sm-6 coluna wow fadeInUp">
 							<h1>Empreendimento Link<span>.</span>in <span>-</span> Vila Mariana</h1>
 							<p>Um projeto exclusivo com a melhor localização da Vila Mariana. O projeto
 								contempla Studios (30m²) e Apartamentos de 1 dormitório (42m²) repleto de serviços e diversos
@@ -137,7 +168,7 @@
 							<div class="container-form">
 								<h6>Receba maiores informações</h6>
 								<p>Gostaria de receber maiores informações sobre o empreeendimento?</p>
-								<form>
+								<form action="src/php/formInteresse.php" method="POST" autocomplete="on">
 									<div class="form-group">
 										<input type="text" class="form-control" id="campo-nome" placeholder="Nome" name="nome"
 											size="35" maxlength="100" required="">
@@ -154,7 +185,9 @@
 										<textarea class="form-control" id="campo-mensagem" rows="3" name="mensagem"
 											placeholder="Mensagem*" required=""></textarea>
 									</div>
-									<button type="submit" class="btn btn-lk-color1 pl-5 pr-5">Enviar</button>
+									<div class="g-recaptcha d-flex justify-content-center" data-sitekey="6LcJhLYUAAAAAPa-e1FBA1REXslhhriGxkhi3Hen">
+									</div>
+									<button type="submit" name="submit" value="submit" class="btn btn-lk-color1 pl-5 pr-5">Enviar</button>
 								</form>
 							</div>
 						</div>
@@ -167,7 +200,7 @@
 			<div class="container">
 				<h3>Conheças nossas plantas</h3>
 				<hr>
-				<div class="row">
+				<div class="row wow fadeIn">
 					<!-- Dormitório -->
 					<div class="col-sm-4">
 						<img src="src/assets/img-dormitorio.jpg" alt="Planta Dormitório Empreendimento Link.in"
@@ -197,7 +230,7 @@
 				<hr>
 				<div class="row">
 					<!-- Texto -->
-					<div class="col-lg-6">
+					<div class="col-lg-6 wow fadeInLeft">
 						<p><i class="icon ion-ios-checkmark"></i> Tomada para carro elétrico</p>
 						<p><i class="icon ion-ios-checkmark"></i> Bike Station</p>
 						<p><i class="icon ion-ios-checkmark"></i> Fechadura eletrônica</p>
@@ -277,7 +310,7 @@
 		</section>
 		<!-- localização -->
 		<section id="aonde-fica">
-			<div class="container">
+			<div class="container wow zoomIn">
 				<h3>Localização</h3>
 				<hr>
 				<p>O Empreendimento Link.in Vila Mariana está localizado no seguinte endereço:</p>
@@ -291,7 +324,7 @@
 		</section>
 		<!-- Contato -->
 		<section id="fale-conosco">
-			<div class="container-fluid">
+			<div class="container-fluid wow fadeIn">
 				<p>Entre em contato para maiores informações</p>
 				<button type="button" class="btn btn-lk-color1" data-toggle="modal" data-target="#modalContato">
 					Contato
@@ -304,7 +337,7 @@
 							<div class="modal-body">
 								<h5>Contato</h5>
 								<hr>
-								<form>
+								<form action="src/php/formInteresse.php" method="POST" autocomplete="on">
 									<div class="form-group">
 										<input type="text" class="form-control" id="campo-nome" placeholder="Nome" name="nome"
 											size="35" maxlength="100" required="">
@@ -321,7 +354,9 @@
 										<textarea class="form-control" id="campo-mensagem" rows="3" name="mensagem"
 											placeholder="Mensagem*" required=""></textarea>
 									</div>
-									<button type="submit" class="btn btn-lk-color1 pl-5 pr-5">Enviar</button>
+									<div class="g-recaptcha d-flex justify-content-center" data-sitekey="6LcJhLYUAAAAAPa-e1FBA1REXslhhriGxkhi3Hen">
+									</div>
+									<button type="submit" name="submit" value="submit" class="btn btn-lk-color1 pl-5 pr-5">Enviar</button>
 								</form>
 							</div>
 						</div>

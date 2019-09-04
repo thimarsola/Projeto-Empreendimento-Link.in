@@ -25,14 +25,6 @@ $(function () {
 	});
 	return false;
 });
-// botão goTo
-$(function () {
-	$(' header .goto a').click(function (e) {
-		e.preventDefault()
-		goTo($(this), 1000);
-	});
-	return false;
-});
 
 // WoW init
 new WOW().init();
